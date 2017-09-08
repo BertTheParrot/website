@@ -1,0 +1,179 @@
+/* Reset */
+@import url(//codepen.io/chrisdothtml/pen/ojLzJK.css);
+
+.footer {
+    margin: auto;
+    font-size: 0;
+    text-align: center;
+    background-color: black;
+    left: 0;
+    right: 0;
+    background-image: url("../img/Parrallax/_small/6.JPG");
+    bottom: 0;
+}
+.row{
+
+    background-color: white;
+}
+
+
+.social-button {
+    display: inline-block;
+    background-color: #fff;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    opacity: .99;
+    border-radius: 28%;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+    -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-button:before {
+    content: '';
+    background-color: #000;
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    top: 90%;
+    left: -110%;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-button .fa {
+    font-size: 38px;
+    vertical-align: middle;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-button.facebook:before {
+    background-color: #3B5998;
+}
+.social-button.facebook .fa {
+    color: #3B5998;
+}
+.social-button.twitter:before {
+    background-color: #3CF;
+}
+.social-button.twitter .fa {
+    color: #3CF;
+}
+.social-button.google:before {
+    background-color: #DC4A38;
+}
+.social-button.google .fa {
+    color: #DC4A38;
+}
+.social-button.linkedIn:before {
+    background-color: #F26798;
+}
+.social-button.linkedIn .fa {
+    color: #F26798;
+}
+.social-button.skype:before {
+    background-color: #00AFF0;
+}
+.social-button.skype .fa {
+    color: #00AFF0;
+}
+.social-button:focus:before, .social-button:hover:before {
+    top: -10%;
+    left: -10%;
+}
+.social-button:focus .fa, .social-button:hover .fa {
+    color: #fff;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+
+
+
+/* ============================================================
+  SECTIONS
+============================================================ */
+section.module:last-child {
+    margin-bottom: 0;
+}
+section.module h2 {
+    margin-bottom: 40px;
+    font-family: "Roboto Slab", serif;
+    font-size: 30px;
+}
+section.module p {
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 300;
+}
+section.module p:last-child {
+    margin-bottom: 0;
+}
+section.module.content {
+    padding: 40px 0;
+
+    background-color: white;
+}
+section.module.parallax {
+    height: 600px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+section.module.parallax h1 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 48px;
+    line-height: 600px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+section.module.parallax-1 {
+    background-image: url("../img/Parrallax/_small/intro.jpg");
+}
+section.module.parallax-2 {
+    background-image: url("../img/Parrallax/_small/education.jpg");
+}
+section.module.parallax-3 {
+    background-image: url("../img/Parrallax/_small/experience.jpg");
+}
+section.module.parallax-4 {
+    background-image: url("../img/Parrallax/_small/technical.jpg");
+}
+section.module.parallax-5 {
+    background-image: url("../img/Parrallax/_small/projects.jpg");
+}
+section.module.parallax-6 {
+    background-image: url("../img/Parrallax/_small/personal.jpg");
+}
+section.module.parallax-7 {
+    background-image: url("../img/Parrallax/_small/contact.JPG");
+}
+@media all and (min-width: 600px) {
+    section.module h2 {
+        font-size: 42px;
+    }
+    section.module p {
+        font-size: 20px;
+    }
+    section.module.parallax h1 {
+        font-size: 96px;
+    }
+}
+@media all and (min-width: 960px) {
+    section.module.parallax h1 {
+        font-size: 160px;
+    }
+}
